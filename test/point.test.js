@@ -37,5 +37,16 @@ describe('Point', () => {
       // ASSERT
       expect(result).to.equal(19)
     })
+    it('should return distance between origin point and point on x axis', () => {
+      // ARRANGE
+      const point1 = { x: 12, y: 1 }
+      const point2 = { x: -2, y: 90 }
+
+      // ACT
+      const result = point.distance(point1, point2)
+
+      // ASSERT
+      expect(result).to.equal(Math.sqrt(8117))
+    })
   })
 })
