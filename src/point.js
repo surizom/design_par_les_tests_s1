@@ -1,5 +1,5 @@
 module.exports = {
-  aFunctionThatReturnsArgs(arg) {
-    return arg
+  distance(point1, point2) {
+    return 0;
   },
 }
